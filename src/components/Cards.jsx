@@ -1,30 +1,35 @@
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import React from 'react';
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+import ImageListItemBar from '@mui/material/ImageListItemBar';
+import ListSubheader from '@mui/material/ListSubheader';
+import IconButton from '@mui/material/IconButton';
 
-const Cards = ( item ) => {  
+const Cards = ({ title, price, image, description }) => {
   return (
-    <Card >
-      <CardActionArea sx={{position:"relative"}} >
-        <CardMedia 
-          component="img"
-         
-          sx={{ width: '100%', height: '100%' }}
-          image={item.image}
-          alt={item.title}
+    <ImageList sx={{ width: 500, height: 450 }}>
+      <ImageListItem key="Subheader" cols={2}>
+        
+      </ImageListItem>
+
+      <ImageListItem>
+        <img
+          src={`${image}?w=248&fit=crop&auto=format`}
+          srcSet={`${image}?w=248&fit=crop&auto=format&dpr=2 2x`}
+          alt={title}
+          loading="lazy"
         />
-        <CardContent sx={{position:"absolute"}}>
-          <Typography gutterBottom variant="h5" component="div">
-            {item.price} $ 
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {item.description}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
+        <ImageListItemBar
+          title={title}
+          subtitle={price}
+          actionIcon={
+            <IconButton sx={{ color: 'rgba(255, 255, 255, 0.54)' }} aria-label={`info about ${description}`}>
+              💙
+            </IconButton >
+          }
+        />
+      </ImageListItem>
+    </ImageList>
   );
 };
 
