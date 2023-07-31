@@ -1,7 +1,10 @@
+import Home from "./pages/Home"
+import "./index.css"
+
 function App() {
   return (
-    <div className="App">
-      <h1>Hello React</h1>
+    <div>
+      <Home/>
     </div>
   )
 }

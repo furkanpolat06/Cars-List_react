@@ -1,35 +1,38 @@
 import React from 'react';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import CardActionArea from '@mui/material/CardActionArea';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
-import ListSubheader from '@mui/material/ListSubheader';
-import IconButton from '@mui/material/IconButton';
 
-const Cards = ({ title, price, image, description }) => {
+const Cards = (item) => { // Düzeltme 1: Arrow fonksiyon tanımına parantez ekledik.
   return (
-    <ImageList sx={{ width: 500, height: 450 }}>
-      <ImageListItem key="Subheader" cols={2}>
-        
-      </ImageListItem>
-
-      <ImageListItem>
-        <img
-          src={`${image}?w=248&fit=crop&auto=format`}
-          srcSet={`${image}?w=248&fit=crop&auto=format&dpr=2 2x`}
-          alt={title}
-          loading="lazy"
-        />
-        <ImageListItemBar
-          title={title}
-          subtitle={price}
-          actionIcon={
-            <IconButton sx={{ color: 'rgba(255, 255, 255, 0.54)' }} aria-label={`info about ${description}`}>
-              💙
-            </IconButton >
-          }
-        />
-      </ImageListItem>
-    </ImageList>
+    <Card className='cards' sx={{ maxWidth: 500 }}>
+      <CardActionArea className='card-container'>
+        <ImageList sx={{ width: 500, height: 300 }}>
+          <ImageListItem key={item.id} sx={{ objectFit: 'cover' }}>
+            <img
+              src={`${item.image}?w=248&fit=crop&auto=format`}
+              srcSet={`${item.image}?w=248&fit=crop&auto=format&dpr=2 2x`}
+              alt={item.title}
+              loading="lazy"
+            />
+            
+          </ImageListItem>
+        </ImageList>
+        <CardContent  className='card-over'>
+          <Typography gutterBottom variant="h5" component="div">
+            {item.title}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            {item.description}
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
   );
 };
 
