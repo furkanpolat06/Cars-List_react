@@ -6,7 +6,6 @@ import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-import ImageListItemBar from '@mui/material/ImageListItemBar';
 
 const Cards = (item) => { // Düzeltme 1: Arrow fonksiyon tanımına parantez ekledik.
   return (
