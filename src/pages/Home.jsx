@@ -1,34 +1,28 @@
 import React, { useState } from "react";
 import data from "../helper/data";
 import Cards from "../components/Cards";
-
-import { Box } from "@mui/material";
+import { Box, Container, Grid } from "@mui/material";
 import Header from "../components/Header";
-
-
 const Home = () => {
-  const[state, setState]=useState("")
- 
-  const filterButton=data.filter(item=>item.category.includes((state)))
+  const [selectedCategory, setSelectedCategory] = useState("");
+  const filteredData = selectedCategory
+    ? data.filter(
+        (item) => item.category.toLowerCase() === selectedCategory.toLowerCase()
+      )
+    : data;
   return (
-    <div>
-      <Header data={data}/>
-    <Box
-      sx={{
-        container: "-moz-initial",
-        margin: "14px ",
-        display: "grid",
-        justifyContent: "center",
-        gap: "1rem",
-        gridTemplateColumns: "repeat(4, 1fr)",
-      }}
-      >
-      {data.map((item) => (
-        <Cards key={item.id} {...item} />
-        ))}
-    </Box>
-        </div>
+    <Container maxWidth="lg">
+      <Header setSelectedCategory={setSelectedCategory} />
+      <Box mt={3}>
+        <Grid container spacing={2}>
+          {filteredData.map((item) => (
+            <Grid item key={item.id} xs={12} sm={6} md={4} lg={3}>
+              <Cards {...item} />
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
+    </Container>
   );
 };
-
 export default Home;
