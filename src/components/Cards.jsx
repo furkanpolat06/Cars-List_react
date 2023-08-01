@@ -8,14 +8,10 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 
 const Cards = (item) => {
-  // Düzeltme 1: Arrow fonksiyon tanımına parantez ekledik.
   return (
-    <Card className="cards" sx={{ maxWidth: 500 }}>
+    <Card className="cards" sx={{ maxWidth: 400, margin:"auto" }}>
       <CardActionArea className="card-container">
-      <Typography variant="body1"  sx={{ bgcolor:"black", width:"5rem", color:"white", textAlign:"center",opacity:".85",  borderRadius:"5px", margin:".2rem", flexWrap:"nowrap" }}>
-            {item.price} $
-          </Typography>
-        <ImageList sx={{ width: 500, height: 300 }}>
+        <ImageList sx={{ width: 600, height: 300, margin:"0 1rem" }}>
           <ImageListItem key={item.id} sx={{ objectFit: "cover" }}>
             <img
               src={`${item.image}?w=248&fit=crop&auto=format`}
@@ -23,6 +19,27 @@ const Cards = (item) => {
               alt={item.title}
               loading="lazy"
             />
+            <Typography
+              variant="body1"
+              sx={{
+                bgcolor: "black",
+                width: "5rem",
+                height: "2rem",
+                color: "white",
+                zIndex: "4",
+                textAlign: "center",
+                paddingY: "4px",
+                opacity: ".85",
+                borderRadius: "5px",
+                margin: ".2rem",
+                flexWrap: "nowrap",
+                position: "absolute",
+                top: "0", // Resmin üstünde olacak şekilde
+                left: "0", // Resmin üstünde olacak şekilde
+              }}
+            >
+              {item.price} $
+            </Typography>
           </ImageListItem>
         </ImageList>
         <CardContent className="card-over">

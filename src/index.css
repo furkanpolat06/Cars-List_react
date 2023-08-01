@@ -1,16 +1,11 @@
-/* .cards {
-    width: 600px;
-    height: 400px;
-    position: relative;
-    overflow: hidden;
-} */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    padding: 1rem 10%;
+    padding: 1rem 5%;
 }
 .cards:hover .card-container img {
     opacity: 1;
@@ -31,16 +26,18 @@ body{
 .card-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 10px;
-    opacity:.7 ;
+    opacity:.9 ;
+    
+
 }
 
 .card-over {
     width: 100%;
     position: absolute;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.884);
+    background-color: rgba(255, 255, 255, 0.842);
     font-size: 1.5rem;
     z-index: 3;
     padding: 1rem;
@@ -54,29 +51,3 @@ body{
     display: none;
 }
 
-/* Assuming you have title and date inside your CardContent component */
-/* .card-over .title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(208, 223, 77, 0.651);
-  
-    color: blue;
-    padding: 1rem;
-    border-radius: 10px 20px 20px 20px;
-    z-index: 2;
-} */
-
-/* .card-over .date {
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,50%);
-    background-color: rgba(0, 0, 0, 0.795);
-    
-    color: blue;
-    padding: 1rem;
-    font-size:0.5rem;
-    border-radius: 10px;
-    z-index: 2;
-} */
