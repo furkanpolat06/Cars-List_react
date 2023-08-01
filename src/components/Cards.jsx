@@ -12,6 +12,9 @@ const Cards = (item) => {
   return (
     <Card className="cards" sx={{ maxWidth: 500 }}>
       <CardActionArea className="card-container">
+      <Typography variant="body1"  sx={{ bgcolor:"black", width:"5rem", color:"white", textAlign:"center",opacity:".85",  borderRadius:"5px", margin:".2rem", flexWrap:"nowrap" }}>
+            {item.price} $
+          </Typography>
         <ImageList sx={{ width: 500, height: 300 }}>
           <ImageListItem key={item.id} sx={{ objectFit: "cover" }}>
             <img
