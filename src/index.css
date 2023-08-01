@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
 *{
     margin: 0;
@@ -6,6 +7,7 @@
 }
 body{
     padding: 1rem 5%;
+    background-color: rgba(255, 228, 196, 0.26);
 }
 .cards:hover .card-container img {
     opacity: 1;
@@ -51,3 +53,6 @@ body{
     display: none;
 }
 
+.title{
+    font-size: rem;
+}
