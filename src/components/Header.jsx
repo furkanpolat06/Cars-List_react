@@ -17,9 +17,9 @@ const Header = ({ data, setSelectedCategory }) => {
         {/* Düzeltme 2: Pass the category value to the click handler */}
         <Button
           onClick={() => handleCategoryFilter("")}
-          variant={activeCategory === "" ? "contained" : "text"}
+          variant={activeCategory === "" ? "contained" : "outlined"}
           color="error"
-          sx={{border:"1px solid lightRed", marginRight:".5rem", }} 
+          sx={{border:"1px solid lightRed", marginRight:".5rem"}} 
           
         >
           All

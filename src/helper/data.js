@@ -15,31 +15,17 @@ const data = [
   },
   
   {
-    id: 2,
-    make: "Honda",
-    model: "Civic",
-    year: 2022,
-    price: 22000,
-    description: "A popular compact car known for its fuel efficiency.",
-    category: "sedan",
-    image: "https://www.honda.com.tr/assets/img/civic/home-banner.png",
-    rating: {
-      rate: 4.2,
-      count: 85,
-    },
-  },
-  {
-    id: 3,
-    make: "Ford",
-    model: "F-150",
-    year: 2021,
-    price: 35000,
-    description: "A powerful pickup truck for heavy-duty work and towing.",
-    category: "pickup",
-    image: "https://api.ford-koegler.de/fileadmin/Modellreihe/F150/Lightning/Text-Bild-Ford_F-150_Lariat__Willkommen_in_der_Koenigsklasse-Desktop-2x.jpg",
+    id: 24,
+    make: "Nissan",
+    model: "GT-R",
+    year: 2023,
+    price: 95000,
+    description: "A legendary sports car known for its speed and performance.",
+    category: "coupe",
+    image: "https://www.auto-data.net/images/f69/Nissan-GT-R-R35-facelift-2023.jpg",
     rating: {
       rate: 4.8,
-      count: 120,
+      count: 90,
     },
   },
   {
@@ -71,20 +57,6 @@ const data = [
     },
   },
   {
-    id: 6,
-    make: "Nissan",
-    model: "Altima",
-    year: 2021,
-    price: 23000,
-    description: "A family-friendly midsize sedan with a spacious interior.",
-    category: "sedan",
-    image: "https://cdn.jdpower.com/JDP_2023%20Nissan%20Altima%20SL%20Garnet%20Pearl%20Red%20Front%20Quarter%20View.jpg",
-    rating: {
-      rate: 4.3,
-      count: 150,
-    },
-  },
-  {
     id: 7,
     make: "Jeep",
     model: "Wrangler",
@@ -99,6 +71,20 @@ const data = [
     },
   },
   {
+    id: 25,
+    make: "BMW",
+    model: "M4",
+    year: 2022,
+    price: 120000,
+    description: "A luxurious and powerful coupe from BMW's M series.",
+    category: "coupe",
+    image: "https://www.arabazzi.com/images/yuklemeler/bmw-m31323.jpg",
+    rating: {
+      rate: 4.7,
+      count: 80,
+    },
+  },
+  {
     id: 8,
     make: "Tesla",
     model: "Model 3",
@@ -110,6 +96,20 @@ const data = [
     rating: {
       rate: 4.9,
       count: 300,
+    },
+  },
+  {
+    id: 22,
+    make: "Audi",
+    model: "RS",
+    year: 2022,
+    price: 85000,
+    description: "A high-performance sports car from Audi's RS series.",
+    category: "sports",
+    image: "https://media.ed.edmunds-media.com/audi/rs-7/2021/oem/2021_audi_rs-7_sedan_base_fq_oem_2_1600.jpg",
+    rating: {
+      rate: 4.7,
+      count: 120,
     },
   },
   {
@@ -212,20 +212,19 @@ const data = [
     },
   },
   {
-    id: 16,
-    make: "Chevrolet",
-    model: "Equinox",
-    year: 2022,
-    price: 30000,
-    description: "A compact SUV with good fuel efficiency and practicality.",
-    category: "suv",
-    image: "https://www.autoscout24.de/cms-content-assets/2ZjAqbTWPlKduPthSUeAgv-878ba15231976e106d8a58d7f0a7faee-chevrolet-equinox-front-1100.jpeg",
+    id: 3,
+    make: "Ford",
+    model: "F-150",
+    year: 2021,
+    price: 35000,
+    description: "A powerful pickup truck for heavy-duty work and towing.",
+    category: "pickup",
+    image: "https://api.ford-koegler.de/fileadmin/Modellreihe/F150/Lightning/Text-Bild-Ford_F-150_Lariat__Willkommen_in_der_Koenigsklasse-Desktop-2x.jpg",
     rating: {
-      rate: 4.3,
-      count: 140,
+      rate: 4.8,
+      count: 120,
     },
   },
-  
   {
     id: 19,
     make: "Hyundai",
@@ -240,22 +239,22 @@ const data = [
       count: 120,
     },
   },
-  
- 
   {
-    id: 22,
-    make: "Audi",
-    model: "RS",
-    year: 2022,
-    price: 85000,
-    description: "A high-performance sports car from Audi's RS series.",
-    category: "sports",
-    image: "https://media.ed.edmunds-media.com/audi/rs-7/2021/oem/2021_audi_rs-7_sedan_base_fq_oem_2_1600.jpg",
+    id: 6,
+    make: "Nissan",
+    model: "Altima",
+    year: 2021,
+    price: 23000,
+    description: "A family-friendly midsize sedan with a spacious interior.",
+    category: "sedan",
+    image: "https://cdn.jdpower.com/JDP_2023%20Nissan%20Altima%20SL%20Garnet%20Pearl%20Red%20Front%20Quarter%20View.jpg",
     rating: {
-      rate: 4.7,
-      count: 120,
+      rate: 4.3,
+      count: 150,
     },
   },
+  
+  
   {
     id: 23,
     make: "Toyota",
@@ -270,37 +269,38 @@ const data = [
       count: 100,
     },
   },
-  {
-    id: 24,
-    make: "Nissan",
-    model: "GT-R",
-    year: 2023,
-    price: 95000,
-    description: "A legendary sports car known for its speed and performance.",
-    category: "coupe",
-    image: "https://www.auto-data.net/images/f69/Nissan-GT-R-R35-facelift-2023.jpg",
-    rating: {
-      rate: 4.8,
-      count: 90,
-    },
-  },
-  {
-    id: 25,
-    make: "BMW",
-    model: "M4",
-    year: 2022,
-    price: 120000,
-    description: "A luxurious and powerful coupe from BMW's M series.",
-    category: "coupe",
-    image: "https://images.prismic.io/carwow/17f9dd59-8690-4eb7-92db-071ffebacaba_LHD+BMW+M4+Competition+2022+Exterior+11.jpg",
-    rating: {
-      rate: 4.7,
-      count: 80,
-    },
-  },
   
+  {
+    id: 2,
+    make: "Honda",
+    model: "Civic",
+    year: 2022,
+    price: 22000,
+    description: "A popular compact car known for its fuel efficiency.",
+    category: "sedan",
+    image: "https://www.honda.com.tr/assets/img/civic/home-banner.png",
+    rating: {
+      rate: 4.2,
+      count: 85,
+    },
+  },
+  {
+    id: 16,
+    make: "Chevrolet",
+    model: "Equinox",
+    year: 2022,
+    price: 30000,
+    description: "A compact SUV with good fuel efficiency and practicality.",
+    category: "suv",
+    image: "https://www.autoscout24.de/cms-content-assets/2ZjAqbTWPlKduPthSUeAgv-878ba15231976e106d8a58d7f0a7faee-chevrolet-equinox-front-1100.jpeg",
+    rating: {
+      rate: 4.3,
+      count: 140,
+    },
+  },
   
 ]
+
 data.forEach((car) => {
   car.title = `${car.make} ${car.model} ${car.year}`;
 });
