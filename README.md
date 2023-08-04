@@ -2,18 +2,16 @@
 
 This project is a web application that displays a list of different cars and allows users to filter them based on categories. Users can view cars with their images and details.
 
+### You can access the project here:
+https://cars-list-react.netlify.app/
+
 ## Technologies Used
 
 - React: The project is built using the React library.
 - Material-UI: Material-UI library is used for design and user interface.
 - Google Fonts: The "Monoton" font from Google Fonts is used for the title.
 
-## How to Run?
 
-1. To copy the project to your computer, either download the repository or clone it.
-2. Go to the project directory and run the `npm install` command to install the necessary dependencies.
-3. Run the `npm start` command to start the project.
-4. Open your web browser and go to `http://localhost:3000` to view the application.
 
 ## Project Structure
 
