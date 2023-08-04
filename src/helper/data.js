@@ -119,7 +119,7 @@ const data = [
     price: 55000,
     description: "A premium compact SUV with a comfortable and stylish interior.",
     category: "suv",
-    image: "https://example.com/audi-q5.jpg",
+    image: "https://cdn.ototeknikveri.com/Files/News/Big/2021-audi-q5-ve-sq5-sportback-avrupaya-geldi.jpg",
     rating: {
       rate: 4.5,
       count: 120,
@@ -133,7 +133,7 @@ const data = [
     price: 28000,
     description: "A versatile wagon with all-wheel drive for outdoor adventures.",
     category: "wagon",
-    image: "https://example.com/subaru-outback.jpg",
+    image: "https://www.autozeitung.de/assets/styles/article_image/public/field/images/subaru-outback-2021-01.jpg?itok=dXbDVlEV",
     rating: {
       rate: 4.4,
       count: 90,
@@ -147,7 +147,7 @@ const data = [
     price: 65000,
     description: "A luxury compact car with a prestigious brand image.",
     category: "luxury",
-    image: "https://example.com/mercedes-c-class.jpg",
+    image: "https://s3-prod.autonews.com/s3fs-public/AMGCV43-MAIN_i.jpg",
     rating: {
       rate: 4.8,
       count: 250,
@@ -161,7 +161,7 @@ const data = [
     price: 42000,
     description: "A reliable and capable full-size pickup truck.",
     category: "pickup",
-    image: "https://example.com/gmc-sierra.jpg",
+    image: "https://file.kelleybluebookimages.com/kbb/base/evox/StJ/13673/2021-GMC-Sierra%201500%20Double%20Cab-front-angle3_13673_089_640x480.jpg",
     rating: {
       rate: 4.6,
       count: 170,
@@ -175,7 +175,7 @@ const data = [
     price: 57000,
     description: "A safe and elegant SUV with advanced safety features.",
     category: "suv",
-    image: "https://example.com/volvo-xc60.jpg",
+    image: "https://www.autoscout24.at/cms-content-assets/227905GMBoSi62u3laFcN4-70d4b9e78c36b4ec9f48d01854e00895-Volvo_XC60__2_-1100.jpg",
     rating: {
       rate: 4.7,
       count: 110,
@@ -183,13 +183,13 @@ const data = [
   },
   {
     id: 14,
-    make: "Lexus",
-    model: "RX",
+    title: "Lexus RX",
+    
     year: 2021,
     price: 54000,
     description: "A premium crossover SUV with a smooth and comfortable ride.",
     category: "suv",
-    image: "https://example.com/lexus-rx.jpg",
+    image: "https://assets.flowfound.com/cars/2023/2023%20Lexus%20RX50.jpg",
     rating: {
       rate: 4.5,
       count: 190,
@@ -203,7 +203,7 @@ const data = [
     price: 110000,
     description: "An iconic sports car with breathtaking performance.",
     category: "sports",
-    image: "https://example.com/porsche-911.jpg",
+    image: "https://cdn.hiconsumption.com/wp-content/uploads/2022/08/2023-Porsche-911-GT3-RS-0-Hero.jpg",
     rating: {
       rate: 4.9,
       count: 80,
@@ -217,7 +217,7 @@ const data = [
     price: 30000,
     description: "A compact SUV with good fuel efficiency and practicality.",
     category: "suv",
-    image: "https://example.com/chevrolet-equinox.jpg",
+    image: "https://www.autoscout24.de/cms-content-assets/2ZjAqbTWPlKduPthSUeAgv-878ba15231976e106d8a58d7f0a7faee-chevrolet-equinox-front-1100.jpeg",
     rating: {
       rate: 4.3,
       count: 140,
@@ -225,4 +225,7 @@ const data = [
   },
   
 ]
+data.forEach((car) => {
+  car.title = `${car.make} ${car.model} ${car.year}`;
+});
 export default data;
