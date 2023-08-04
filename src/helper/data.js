@@ -77,7 +77,7 @@ const data = [
     price: 23000,
     description: "A family-friendly midsize sedan with a spacious interior.",
     category: "sedan",
-    image: "https://smartcdn.gprod.postmedia.digital/driving/wp-content/uploads/2022/03/MyAltima5-e1651160018126.jpg",
+    image: "https://cdn.jdpower.com/JDP_2023%20Nissan%20Altima%20SL%20Garnet%20Pearl%20Red%20Front%20Quarter%20View.jpg",
     rating: {
       rate: 4.3,
       count: 150,
@@ -91,7 +91,7 @@ const data = [
     price: 38000,
     description: "An off-road capable SUV with a rugged design.",
     category: "suv",
-    image: "https://www.motortrend.com/uploads/2022/08/2023-Jeep-Wrangler-Sahara-front-three-quarter-view-1.jpg",
+    image: "https://static.motor.es/fotos-noticias/2023/04/jeep-wrangler-2024-202394130-1680714947_1.jpg",
     rating: {
       rate: 4.7,
       count: 180,
