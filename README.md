@@ -4,7 +4,7 @@ This project is a web application that displays a list of different cars and all
 
 ### You can access the project here:
 
-https://cars-list-react.netlify.app/
+-https://cars-list-react.netlify.app/
 
 ## Technologies Used
 
