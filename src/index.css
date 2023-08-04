@@ -4,11 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 body{
     padding: 1rem 5%;
-    background: rgb(253,29,29);
-background: linear-gradient(330deg, rgba(253,29,29,1) 5%, rgba(255,255,255,1) 61%);
+    background: rgb(74,73,89);
+background: linear-gradient(45deg, rgba(74,73,89,1) 0%, rgba(204,204,221,1) 74%, rgba(223,226,227,1) 100%, rgba(207,210,210,1) 100%, rgba(0,212,255,1) 100%);
+background-repeat: no-repeat;
+height: 100vh;
 }
 .cards:hover .card-container img {
     opacity: 1;

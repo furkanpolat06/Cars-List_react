@@ -47,13 +47,13 @@ const Header = ({ data, setSelectedCategory }) => {
           pickup
         </Button>
         <Button
-          onClick={() => handleCategoryFilter("sports")}
+          onClick={() => handleCategoryFilter("coupe")}
           variant={
-            activeCategory === "sports" ? "contained" : "outlined"
+            activeCategory === "coupe" ? "contained" : "outlined"
           }
           sx={{border:"1px solid lightBlue", marginRight:".5rem"}} 
         >
-          sports
+          coupe
         </Button>
       </Box>
     </Stack>

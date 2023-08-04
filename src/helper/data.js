@@ -1,18 +1,19 @@
 const data = [
   {
     id: 1,
-    make: "Toyota",
-    model: "Camry",
-    year: 2020,
-    price: 25000,
-    description: "A reliable and comfortable sedan for everyday use.",
+    make: "BMW",
+    model: "M5",
+    year: 2023,
+    price: 90000,
+    description: "A high-performance executive car from BMW's M series.",
     category: "sedan",
-    image: "https://content.toyota.com.ph/uploads/prices/701/002_701_1639107449853_000.jpg",
+    image: "https://cdn.motor1.com/images/mgl/OpP3e/s3/2021-bmw-m5-m5-competition.jpg",
     rating: {
-      rate: 4.5,
+      rate: 4.9,
       count: 100,
     },
   },
+  
   {
     id: 2,
     make: "Honda",
@@ -48,7 +49,7 @@ const data = [
     year: 2023,
     price: 40000,
     description: "A sporty muscle car with great performance and style.",
-    category: "sport",
+    category: "coupe",
     image: "https://www.motortrend.com/uploads/2022/10/17-2023-Chevrolet-Camaro-RS-Exterior.jpg",
     rating: {
       rate: 4.6,
@@ -183,7 +184,8 @@ const data = [
   },
   {
     id: 14,
-    title: "Lexus RX",
+    make:"Lexus",
+    model:"RX",
     
     year: 2021,
     price: 54000,
@@ -202,7 +204,7 @@ const data = [
     year: 2023,
     price: 110000,
     description: "An iconic sports car with breathtaking performance.",
-    category: "sports",
+    category: "coupe",
     image: "https://cdn.hiconsumption.com/wp-content/uploads/2022/08/2023-Porsche-911-GT3-RS-0-Hero.jpg",
     rating: {
       rate: 4.9,
@@ -223,6 +225,80 @@ const data = [
       count: 140,
     },
   },
+  
+  {
+    id: 19,
+    make: "Hyundai",
+    model: "Tucson",
+    year: 2022,
+    price: 30000,
+    description: "A compact SUV with modern design and advanced features.",
+    category: "suv",
+    image: "https://www.arabahabercisi.com/wp-content/uploads/2021/04/2021-Hyundai-Tucson-fiyat%C4%B1-600x381.jpg",
+    rating: {
+      rate: 4.3,
+      count: 120,
+    },
+  },
+  
+ 
+  {
+    id: 22,
+    make: "Audi",
+    model: "RS",
+    year: 2022,
+    price: 85000,
+    description: "A high-performance sports car from Audi's RS series.",
+    category: "sports",
+    image: "https://media.ed.edmunds-media.com/audi/rs-7/2021/oem/2021_audi_rs-7_sedan_base_fq_oem_2_1600.jpg",
+    rating: {
+      rate: 4.7,
+      count: 120,
+    },
+  },
+  {
+    id: 23,
+    make: "Toyota",
+    model: "Camry",
+    year: 2020,
+    price: 25000,
+    description: "A reliable and comfortable sedan for everyday use.",
+    category: "sedan",
+    image: "https://content.toyota.com.ph/uploads/prices/701/002_701_1639107449853_000.jpg",
+    rating: {
+      rate: 4.5,
+      count: 100,
+    },
+  },
+  {
+    id: 24,
+    make: "Nissan",
+    model: "GT-R",
+    year: 2023,
+    price: 95000,
+    description: "A legendary sports car known for its speed and performance.",
+    category: "coupe",
+    image: "https://www.auto-data.net/images/f69/Nissan-GT-R-R35-facelift-2023.jpg",
+    rating: {
+      rate: 4.8,
+      count: 90,
+    },
+  },
+  {
+    id: 25,
+    make: "BMW",
+    model: "M4",
+    year: 2022,
+    price: 120000,
+    description: "A luxurious and powerful coupe from BMW's M series.",
+    category: "coupe",
+    image: "https://images.prismic.io/carwow/17f9dd59-8690-4eb7-92db-071ffebacaba_LHD+BMW+M4+Competition+2022+Exterior+11.jpg",
+    rating: {
+      rate: 4.7,
+      count: 80,
+    },
+  },
+  
   
 ]
 data.forEach((car) => {
