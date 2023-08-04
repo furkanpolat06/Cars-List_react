@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Car List Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a web application that displays a list of different cars and allows users to filter them based on categories. Users can view cars with their images and details.
 
-## Available Scripts
+## Technologies Used
 
-In the project directory, you can run:
+- React: The project is built using the React library.
+- Material-UI: Material-UI library is used for design and user interface.
+- Google Fonts: The "Monoton" font from Google Fonts is used for the title.
 
-### `yarn start`
+## How to Run?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. To copy the project to your computer, either download the repository or clone it.
+2. Go to the project directory and run the `npm install` command to install the necessary dependencies.
+3. Run the `npm start` command to start the project.
+4. Open your web browser and go to `http://localhost:3000` to view the application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Structure
 
-### `yarn test`
+The project consists of main components: `Home`, `Cards`, and `Header`. There is also a module called `data` which contains car information.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `Home`: The main page component used to list cars and filter them by categories.
+- `Cards`: Component for displaying cars in a card view.
+- `Header`: Component for the page title and category filter buttons.
+- `data`: A JSON module containing the car dataset.
 
-### `yarn build`
+## Data Set
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A dataset containing car information is used. Each car has an ID, brand, model, year, price, description, category, image, and rating. This dataset is available in the `data` module and allows users to filter and explore cars.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Style and Design
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Custom CSS rules and Material-UI component styles are used for the project. The CSS file includes customizations for hover effects on cards and opening animations for details.
 
-### `yarn eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project serves as a great starting point to learn React and Material-UI basics. Feel free to experiment on your own computer and enhance the project according to your preferences. Enjoy the learning journey!
