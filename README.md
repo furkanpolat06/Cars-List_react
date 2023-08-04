@@ -2,7 +2,7 @@
 
 This project is a web application that displays a list of different cars and allows users to filter them based on categories. Users can view cars with their images and details.
 
-### You can access the project here:
+You can access the project here:
 
  https://cars-list-react.netlify.app/
 
