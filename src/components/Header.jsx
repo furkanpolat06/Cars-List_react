@@ -18,7 +18,8 @@ const Header = ({ data, setSelectedCategory }) => {
         <Button
           onClick={() => handleCategoryFilter("")}
           variant={activeCategory === "" ? "contained" : "text"}
-          sx={{border:"1px solid lightBlue", marginRight:".5rem", }} 
+          color="error"
+          sx={{border:"1px solid lightRed", marginRight:".5rem", }} 
           
         >
           All
@@ -26,14 +27,16 @@ const Header = ({ data, setSelectedCategory }) => {
         <Button
           onClick={() => handleCategoryFilter("sedan")}
           variant={activeCategory === "sedan" ? "contained" : "outlined"}
-          sx={{border:"1px solid lightBlue", marginRight:".5rem"}} 
+          color="error"
+          sx={{border:"1px solid lightRed", marginRight:".5rem"}} 
         >
           sedan
         </Button>
         <Button
           onClick={() => handleCategoryFilter("suv")}
           variant={activeCategory === "suv" ? "contained" : "outlined"}
-          sx={{border:"1px solid lightBlue", marginRight:".5rem"}} 
+          color="error"
+          sx={{border:"1px solid lightRed", marginRight:".5rem"}} 
         >
           suv
         </Button>
@@ -41,8 +44,9 @@ const Header = ({ data, setSelectedCategory }) => {
           onClick={() => handleCategoryFilter("pickup")}
           variant={
             activeCategory === "pickup" ? "contained" : "outlined"
-          }
-          sx={{border:"1px solid lightBlue", marginRight:".5rem"}} 
+        }
+          color="error"
+          sx={{border:"1px solid lightRed", marginRight:".5rem"}} 
         >
           pickup
         </Button>
@@ -50,8 +54,10 @@ const Header = ({ data, setSelectedCategory }) => {
           onClick={() => handleCategoryFilter("coupe")}
           variant={
             activeCategory === "coupe" ? "contained" : "outlined"
+
           }
-          sx={{border:"1px solid lightBlue", marginRight:".5rem"}} 
+          color="error"
+          sx={{border:"1px solid lightRed", marginRight:".5rem"}} 
         >
           coupe
         </Button>

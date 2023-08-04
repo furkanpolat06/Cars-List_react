@@ -9,9 +9,9 @@ import ImageListItem from "@mui/material/ImageListItem";
 
 const Cards = (item) => {
   return (
-    <Card className="cards" sx={{ maxWidth: 400, margin:"auto" }}>
+    <Card className="cards" sx={{ maxWidth: 500, margin:"auto" }}>
       <CardActionArea className="card-container">
-        <ImageList sx={{ width: 600, height: 300, margin:"0 1rem" }}>
+        <ImageList sx={{ width: 800, height: 300, objectFit: "contain" }}>
           <ImageListItem key={item.id} sx={{ objectFit: "cover" }}>
             <img
               src={`${item.image}?w=248&fit=crop&auto=format`}
