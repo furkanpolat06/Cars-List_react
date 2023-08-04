@@ -24,36 +24,36 @@ const Header = ({ data, setSelectedCategory }) => {
           All
         </Button>
         <Button
-          onClick={() => handleCategoryFilter("electronics")}
-          variant={activeCategory === "electronics" ? "contained" : "outlined"}
+          onClick={() => handleCategoryFilter("sedan")}
+          variant={activeCategory === "sedan" ? "contained" : "outlined"}
           sx={{border:"1px solid lightBlue", marginRight:".5rem"}} 
         >
-          Electronics
+          sedan
         </Button>
         <Button
-          onClick={() => handleCategoryFilter("jewelery")}
-          variant={activeCategory === "jewelery" ? "contained" : "outlined"}
+          onClick={() => handleCategoryFilter("suv")}
+          variant={activeCategory === "suv" ? "contained" : "outlined"}
           sx={{border:"1px solid lightBlue", marginRight:".5rem"}} 
         >
-          Jewelery
+          suv
         </Button>
         <Button
-          onClick={() => handleCategoryFilter("men's clothing")}
+          onClick={() => handleCategoryFilter("pickup")}
           variant={
-            activeCategory === "men's clothing" ? "contained" : "outlined"
+            activeCategory === "pickup" ? "contained" : "outlined"
           }
           sx={{border:"1px solid lightBlue", marginRight:".5rem"}} 
         >
-          Men's Clothing
+          pickup
         </Button>
         <Button
-          onClick={() => handleCategoryFilter("women's clothing")}
+          onClick={() => handleCategoryFilter("sports")}
           variant={
-            activeCategory === "women's clothing" ? "contained" : "outlined"
+            activeCategory === "sports" ? "contained" : "outlined"
           }
           sx={{border:"1px solid lightBlue", marginRight:".5rem"}} 
         >
-          Women's Clothing
+          sports
         </Button>
       </Box>
     </Stack>
